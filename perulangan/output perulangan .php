@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
-<body>
-    <h2>MENGULANG DOLAR LEBIH TINGGI DARI RUPIAH</h2>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <?php
-    // Mengecek apakah ada data yang dikirimkan melalui metode GET
-    if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($_GET)) {
-        echo "<h2>Data yang Dimasukkan:</h2>";
-        for ($i = 1; $i <= $jumlah_input; $i++) { 
-            $input_name = 'input' . $i;
-            if (isset($_GET[$input_name])) {
-                echo "Input $i: " . htmlspecialchars($_GET[$input_name]) . "<br>";
-            }
-        }
-    }
-    ?>
-</body>
-</html>
+    
+
+
+        <div class="login-container">
+        </head>
+  <body>
+<h2> Selamat Rian Kamu Berhasil Login</h2>
+
+<div class="login-container2">
+      
 <?php
-// Inisialisasi variabel $totaldolar lebih tinggi dari rupiah = 10;
-$totalHariKerja = 10;
-// Loop untuk menjalankan aktivitas selama 10 hari kerja
-for ($dolarlebihtinggidarirupiah = 1; $dolarlebihtinggidarirupiah <= $dolarlebihtinggidarirupiah; $dolarlebihtinggidarirupiah++) {
-echo "Dolar lebih tinggi dari rupiah ke-" . $dolarlebihtinggidarirupiah . "<br>"; }
-// Output akhir
-echo "Semua aktivitas telah selesai." ; 
-
-
+$jumlah = $_POST['jumlah'];
+//Mulai
+//Iniliasisasi variabel i dengan nilai 1.
+//Lakukan perulangan selama i kurang dari atau sama dengan 1000:
+//Cetak nilai i
+//Akhiri perulangan
+//Selesai
 ?>
+<?php
+// Perulangan untuk menampilkan "Dolar lebih t"
+for ($i = 1; $i <= $jumlah; $i++) {
+      echo "Dolar lebih tinggi dari rupiah " . $i . "<br>";
+}
+?>
+
+<body>
+<h1> Hasil Perulangan sebanyak <?php echo $_POST['jumlah'];?> kali</h1>
 <p>
-<a href="index perulangan .php">
+<a href="index perulangan .php" >
       <button>Kembali ke Input</button>
 </a>
 </p>
@@ -41,5 +46,6 @@ echo "Semua aktivitas telah selesai." ;
 <a href="../">
       <button>Folder Awal</button>
 </a>
-
-<p><i><strong>By M.Afriansyah</strong>
+<br><br><strong>By M.Afriansyah</strong=";
+</body>
+  </html> 

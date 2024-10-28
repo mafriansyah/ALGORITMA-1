@@ -1,52 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Pengguna</title>
-    <body>
 
-    <strong style="-webkit-text-fill-color: blue; text-transform:uppercase"></strong> 
-   
-    
-               
-
+    <title>HARI KERJA</title>
 </head>
+
 <body>
-<div class="login-container">
-        
-    <div class="welcome-message2">Selamat Datang Rian</div>
-    <div class="welcome-message1"><h4>Di Program Project Percabangan Notasi Algoritma <h4></div>
-    
+    <h4>Selamat datang <strong style="-webkit-text-fill-color: blue; text-transform:uppercase"> <?php echo $_GET['nama'] ?> </strong>di Program Project Percabangan Notasi Algoritma </h4>
+    <p>Anda Login Sebagai : <?php if ($_GET) {
+                                echo $_GET['nama'];
+                                echo '  Dengan Email: ' . $_GET['email'];
+                                $_GET['status'] = 'aktif';
+                            }
 
-<strong style="-webkit-text-fill-color: blue; text-transform:uppercase"></strong> 
+                            ?></p>
 
-<form method="GET" action="output percabangan .php">
+    <form action="output percabangan .php" method="post">
+        <html>
 
-  <label for="Input Perulangan Rian">Input Percabangan Rian:</label>
-  <input type="text" id="Input Perulangan Rian" name="IInput Perulangan Rian" required><br><br>
+        <head>
+            <title>Menentukan Tahun Kabisat</title>
+        </head>
+
+        <body>
+            <h2>Masukkan Nilai Inputan</h2>
+            <form action="output percabangan .php" method="post">
+            <label for="Input tahun kabisat">Input tahun kabisat:</label>
+  <Input type="text" id="Input tahun kabisat" name="Input tahun kabisat" required><br><br>
+
   
-  
-  <input type="submit" value="Hasil Input">
-</form>
+                <input type="submit" value="Input">
+            </form>
+        </body>
 
-</body>
-</html>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-// Simulasi data pengguna yang terdaftar di sistem (untuk contoh ini hardcoded)
-$InputHariKerja = [
-    'Input Perulangan Rian' => 'M.Afriansyah',     
-
-];
-}
-
-
-
-
-
-
-
-
-
+        </html>

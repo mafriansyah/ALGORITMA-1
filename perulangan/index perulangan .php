@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Pengguna</title>
-    </head>
+    
+  
+</head>
 <body>
 <div class="login-container">
 
@@ -29,13 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 // Simulasi data pengguna yang terdaftar di sistem (untuk contoh ini hardcoded)
 $users = [
     'user1' => 'Rian',    
-    'user2' => 'ryanksp34@gmail.com',    
+    'user2' => 'ryanksp@gmail.com',    
 ];
 
 }
 
 ?>
-
-
-
-
